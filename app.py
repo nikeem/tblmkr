@@ -78,13 +78,27 @@ if raw_text:
 
         # Скачивание
         st.header("4. Скачать результат")
-        st.download_button(
-            label="📥 Скачать JSON для Creatium",
-            data=json_output,
-            file_name="creatium_table.json",
-            mime="application/json",
-            use_container_width=True
-        )
+
+        col1, col2 = st.columns(2)
+        with col1:
+            st.download_button(
+                label="📥 Скачать JSON",
+                data=json_output,
+                file_name="creatium_table.json",
+                mime="application/json",
+                use_container_width=True
+            )
+        with col2:
+            # Показать JSON для копирования
+            with st.popover("📋 Скопировать JSON", use_container_width=True):
+                st.text_area(
+                    "JSON для Creatium (нажмите Ctrl+C чтобы скопировать):",
+                    value=json_output,
+                    height=300,
+                    key="json_copy_area",
+                    label_visibility="collapsed"
+                )
+                st.info("💡 Нажмите Ctrl+C (или Cmd+C на Mac) чтобы скопировать")
 
     except Exception as e:
         st.error(f"❌ Ошибка при обработке данных: {e}")
