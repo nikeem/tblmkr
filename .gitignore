@@ -7,6 +7,13 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+env/
+venv/
+ENV/
+.venv/
+
+# Streamlit
+.streamlit/secrets.toml
 
 # IDE
 .vscode/
@@ -20,4 +27,6 @@ Thumbs.db
 
 # Temporary files
 *_backup.*
-*_backup.*
+in*.txt
+out*.txt
+!README.md

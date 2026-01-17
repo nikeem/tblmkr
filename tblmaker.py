@@ -7,7 +7,7 @@ import json
 import re
 
 
-def parse_input(filepath: str) -> list[dict]:
+def parse_input(filepath: str) -> tuple[list[dict], dict | None]:
     """
     Парсит входной txt файл в список словарей.
 
@@ -15,7 +15,21 @@ def parse_input(filepath: str) -> list[dict]:
     Последняя строка может быть "Главный тренер: Имя"
     """
     with open(filepath, 'r', encoding='utf-8') as f:
-        lines = [line.rstrip('\n') for line in f.readlines()]
+        text = f.read()
+    return parse_text(text)
+
+
+def parse_text(text: str) -> tuple[list[dict], dict | None]:
+    """
+    Парсит текст из памяти (аналогично parse_input, но для строковой переменной).
+
+    Args:
+        text: Текст с табулированными данными
+
+    Returns:
+        (rows, coach) - список словарей с игроками и опционально словарь тренера
+    """
+    lines = text.strip().split('\n')
 
     # Первая строка - заголовки (не используем, но можем проверить)
     headers = lines[0].split('\t')
