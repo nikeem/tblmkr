@@ -1,0 +1,391 @@
+{
+  "uid": "524b949e72ed49b8836dc815",
+  "className": "WidgetMetaHtml",
+  "data": {
+    "datamix": {
+      "nodebg": "4.4",
+      "widgetpaddings": "4.4",
+      "widgetborders": "4.4",
+      "widgetshadow": "4.4",
+      "widgetfx": "4.4",
+      "widgetparameters": "4.4",
+      "widgetadaptive": "4.4",
+      "metahtml": "4.4",
+      "repeater": "4.4"
+    },
+    "style": {
+      "handlers": "style",
+      "vals": {
+        "padLeft_x_all": 0,
+        "padRight_x_all": 0
+      },
+      "tabs": {
+        "primary": "paddings",
+        "bg": "bg_video_",
+        "bg_particles": "particles_view",
+        "bg_place__soft": "bg_place__soft_main",
+        "bg_place__hard": "bg_place__hard_main",
+        "shadow__soft": "shadow__soft_main",
+        "shadow__hard": "shadow__hard_main",
+        "paddings__soft": "paddings__soft_main",
+        "paddings__hard": "paddings__hard_main",
+        "widgetfx": "widgetfx_wow"
+      },
+      "toggles": {
+        "bg_place": "soft",
+        "shadow": "soft",
+        "paddings": "soft"
+      }
+    },
+    "settings": {
+      "handlers": "settings",
+      "vals": {
+        "name": "",
+        "html": "<div class=\"texttable\"> [[cont]] </div>",
+        "css": ".screen-xs .texttable, .screen-sm .texttable  {\n    overflow-x: auto;\n}\n\nTH,TD {\n  padding: {{var68}}px {{var69}}px;\n  border: {{border}}px {{line}} {{color}};\n}",
+        "embeds": [
+          {
+            "name": "cont",
+            "type": "text"
+          }
+        ],
+        "meta_cdn": [
+          ""
+        ],
+        "tabs": [
+          {
+            "id": "main",
+            "name": "Главные"
+          }
+        ],
+        "variables": [
+          {
+            "macros": "color",
+            "name": "Цвет таблицы",
+            "type": "color",
+            "value": {
+              "datamix": {
+                "color": "4.4"
+              },
+              "data": [
+                0.9928057553956838,
+                0,
+                0,
+                1
+              ]
+            },
+            "tab": "main",
+            "showCondition": "",
+            "useInJs": false
+          },
+          {
+            "macros": "line",
+            "name": "Границы",
+            "showCondition": "border!==0",
+            "tab": "main",
+            "type": "radiolist",
+            "values": {
+              "none": "Нет",
+              "dotted": "Точки",
+              "dashed": " Пунктир",
+              "solid": "Линия",
+              "double": "Двойная линия(видно от 3 пикселей)"
+            },
+            "value": "solid",
+            "useInJs": false
+          },
+          {
+            "macros": "border",
+            "name": "Толщина границ",
+            "type": "number",
+            "min": 0,
+            "max": 10,
+            "value": 1,
+            "tab": "main",
+            "showCondition": "line!='none'",
+            "useInJs": false
+          },
+          {
+            "macros": "var68",
+            "name": "Отступы ячейки таблицы - сверху и снизу",
+            "showCondition": "",
+            "tab": "main",
+            "type": "number",
+            "min": 0,
+            "max": 50,
+            "value": 0,
+            "useInJs": false
+          },
+          {
+            "macros": "var69",
+            "name": "Отступы ячейки таблицы - слева и справа",
+            "showCondition": "",
+            "tab": "main",
+            "type": "number",
+            "min": 0,
+            "max": 50,
+            "value": 0,
+            "useInJs": false
+          }
+        ],
+        "enable_query": true,
+        "query_scheme": "v0.1"
+      },
+      "tabs": {
+        "primary": "main",
+        "metahtml__soft": "metahtml__soft_main",
+        "metahtml__hard": "metahtml__hard_interface"
+      },
+      "toggles": {
+        "metahtml": "soft"
+      }
+    },
+    "state": {},
+    "embeds": {
+      "cont": {
+        "datamix": {
+          "html": "4.4"
+        },
+        "html": {
+          "datamix": {
+            "ast": "4.4"
+          },
+          "children": [
+            {
+              "type": "Code",
+              "code": "PLACEHOLDER_HTML"
+            }
+          ]
+        },
+        "tag": "p",
+        "lg": {
+          "color": {
+            "datamix": {
+              "color": "4.4"
+            },
+            "data": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "md": {
+          "color": {
+            "datamix": {
+              "color": "4.4"
+            },
+            "data": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "sm": {
+          "color": {
+            "datamix": {
+              "color": "4.4"
+            },
+            "data": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "xs": {
+          "override": {
+            "align": false,
+            "font": false,
+            "weight": false,
+            "size": true,
+            "intervals": false,
+            "columns": false,
+            "color": false
+          },
+          "size": 12,
+          "color": {
+            "datamix": {
+              "color": "4.4"
+            },
+            "data": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "tplname": "text"
+      }
+    },
+    "templates": {
+      "text": {
+        "datamix": {
+          "html": "4.4"
+        },
+        "html": {
+          "datamix": {
+            "ast": "4.4"
+          },
+          "children": [
+            {
+              "type": "Code",
+              "code": "Редактируемый текст"
+            }
+          ]
+        },
+        "tag": "p",
+        "lg": {
+          "color": {
+            "datamix": {
+              "color": "4.4"
+            },
+            "data": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "md": {
+          "color": {
+            "datamix": {
+              "color": "4.4"
+            },
+            "data": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "sm": {
+          "color": {
+            "datamix": {
+              "color": "4.4"
+            },
+            "data": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "xs": {
+          "color": {
+            "datamix": {
+              "color": "4.4"
+            },
+            "data": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "tplname": "text"
+      },
+      "icon": {
+        "datamix": {
+          "rawsvgicon": "4.4"
+        },
+        "handlers": "rawsvgicon",
+        "vals": {
+          "src": {
+            "datamix": {
+              "icon": "4.4"
+            },
+            "file": "//static.creatium.io/svg/icons-thin/controls-33.svg",
+            "svg": "<style type=\"text/css\"><![CDATA[ .st0{fill:none;stroke:#231F20;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} ]]></style><polygon class=\"st0\" points=\"30.001,2.421 38.965,20.576 59,23.49 44.499,37.622 47.922,57.579 30.001,48.156 12.076,57.579 15.5,37.622 1,23.49 21.041,20.576 \"/>",
+            "source": "upload"
+          }
+        },
+        "tplname": "icon"
+      },
+      "image": {
+        "datamix": {
+          "rawimage": "4.4"
+        },
+        "handlers": "rawimage",
+        "vals": {
+          "src": {
+            "datamix": {
+              "img": "4.4"
+            },
+            "file": "//i.1.creatium.io/plp/u0.plpstatic.ru/63d3a6c9689d0a310bdb33ba48a9f341/194594eafe8a83db5eb472d202544c73.png",
+            "size": [
+              477,
+              500
+            ]
+          }
+        },
+        "tplname": "image"
+      }
+    },
+    "cells": {
+      "query": {
+        "limit": 31,
+        "limit_dev": 35
+      },
+      "variable": "table"
+    }
+  },
+  "redactor": "4.4"
+}
